@@ -1,0 +1,14 @@
+.todo-item {
+  display: flex;
+  font-family: var(--rubik);
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 450px;
+  margin: 10px 0;
+
+  &__id {
+    margin-right: 8px;
+  }
+  &__text {
+  }
+}

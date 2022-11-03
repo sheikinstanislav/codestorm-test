@@ -1,0 +1,10 @@
+.block {
+  padding: 32px;
+  background-color: var(--controls-bg);
+  border-radius: 8px;
+  &__title {
+    font-family: var(--rubik);
+    font-size: 18px;
+    font-weight: 500;
+  }
+}

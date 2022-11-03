@@ -1,0 +1,59 @@
+/* Check */
+.check {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 10px 0;
+
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 17px;
+    min-height: 20px;
+    min-width: 20px;
+    overflow: hidden;
+    margin-right: 7px;
+    border-radius: 5px;
+
+    background-color: var(--controls-bg);
+    transition: 0.3s;
+    .checkmark {
+      display: none;
+    }
+  }
+
+  &__label {
+    font-weight: 500;
+    font-size: 14px;
+    font-family: var(--montserrat);
+    cursor: pointer;
+  }
+  &__input {
+    position: absolute;
+    width: 18px;
+    height: 17px;
+    cursor: pointer;
+  }
+  /* Checked */
+  &__input:checked + &__box {
+    .checkmark {
+      display: block;
+    }
+  }
+  /* Focused */
+  &__input:focus + &__box {
+  }
+  /* Disabled */
+  &__input:disabled + &__box {
+    border: 3px solid #9b9b9b;
+  }
+  &__input:disabled ~ &__text {
+    cursor: default;
+  }
+  /*Checked disabled */
+  &__input:checked:disabled + &__box {
+    background-color: var(--color-grey);
+  }
+}

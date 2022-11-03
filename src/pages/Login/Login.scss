@@ -1,0 +1,14 @@
+.login {
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &-form {
+    &__heading {
+      font-size: 64px;
+      line-height: 80px;
+      font-family: var(--lexend-deca);
+      margin-bottom: 35px;
+    }
+  }
+}

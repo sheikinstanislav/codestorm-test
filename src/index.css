@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Montserrat:wght@500&family=Rubik:wght@400;500&display=swap');
+
+:root {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--white);
+  background-color: var(--bg-color);
+
+  /* CSS Variables */
+  --lexend-deca: 'Lexend Deca', sans-serif;
+  --montserrat: 'Montserrat', sans-serif;
+  --rubik: 'Rubik', sans-serif;
+
+  --bg-color: #093545;
+  --white: #fff;
+  --primary-color: #20df7f;
+  --controls-bg: #224957;
+}

@@ -1,0 +1,14 @@
+.page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 10px 15px;
+  .wave {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+}
