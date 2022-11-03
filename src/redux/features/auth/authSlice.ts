@@ -1,4 +1,4 @@
-import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { initialAuthState } from '../../../types/types';
 import axios from '../../../utils/axios';
 
@@ -40,14 +40,17 @@ export const authSlice = createSlice({
   },
   extraReducers: {
     // Login user
-    [loginUser.pending]: (state) => {
+    [loginUser.pending]: (state: initialAuthState) => {
       state.isLoading = true;
     },
-    [loginUser.fulfilled]: (state, action) => {
+    [loginUser.fulfilled]: (state: initialAuthState, action: PayloadAction) => {
       state.isLoading = false;
       state.accessToken = action.payload;
     },
-    [loginUser.rejectWithValue]: (state, action) => {
+    [loginUser.rejectWithValue]: (
+      state: initialAuthState,
+      action: PayloadAction
+    ) => {
       state.isLoading = false;
     },
   },
