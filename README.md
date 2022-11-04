@@ -20,3 +20,9 @@ npm i | npm install
 ```bash
 npm run start
 ```
+
+default credentials
+```json
+  "email": "test@email.com",
+  "password": "qwerty"
+```
